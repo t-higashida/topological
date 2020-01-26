@@ -1,0 +1,64 @@
+\section{積空間と商空間}
+
+2つの図形（位相空間）$X,Y$に対し，$X$の点$x$と$Y$の点$y$の点の組$(x,y)$全体は，
+新しい図形(位相空間）をつくる．この図形を\textbf{積空間}（product space）とよび，
+$X	\times	Y$と書く．
+
+\例{2.1}
+$I	\times	I$は$\{	(x,y)	\:	|	\:	0	\leqq	x	\leqq	1,	0	\leqq	y	\leqq	1	\}$と同じだから，
+正方形で，$D^2$と位相同型．$I	\times	I$は簡単に$I^2$と書く．
+同様に$I^n	=	I	\times	\cdots	\times	I$は$D^n$と位相同型．
+\□
+
+\例{2.2}
+$S^1	\times	S^1$はドーナツの表面と位相同型で，\textbf{トーラス}（torus）と呼ばれ，
+$T^2$と書くこともある（例2.15 参照）．
+\□
+
+ある図形$X$の中のいくつかの点を同じ点とみなし，他のいくつかの点も同じ点とみなし，
+こうして（同値関係を与えて），新しい図形$\tilde{X}$をつくることができる．
+この図形を$X$から（ある同値関係によって）つくられた\textbf{商空間}
+（quotient space）という．同値関係を抽象的に$ \sim$で表して，
+$\tilde{X}	=	X	/	\sim$と書くこともある．
+
+\例{2.3}
+$I$の両端$0$と$1$を同じ点とみなすと円周ができて，これは$S^1$ともアルファベットの
+\textsf{O}とも位相同型である．$D^n$の境界$\partial D^n	=	S^{n-1}$のすべての点を
+同じ点とみなすと，$S^n$と位相同型な図形ができる．
+\□
+
+\例{2.4}
+正方形$I^2	=	\{	(x,y)	\:	|	\:	0	\leqq	x	\leqq	1,	0	\leqq	y	\leqq	1\}$の上端と下端，
+左端と右辺の線分の点で，座標軸に平行移動して移る点は，同じ点とみなす．
+すなわち，すべての$0	\leqq	y	\leqq	1$に対して，$(0,y)$と$(1,y)$は同じ点とみなし，
+すべての$0	\leqq	x	\leqq	1$に対して，$(x,0)$と$(x,1)$は同じ点とみなす．そのとき，
+商空間として，トーラス$T^2	\equiv	S^1	\times	S^1$と位相同型なものができる．
+\□
+
+\例{2.5}
+正方形$I^2	=	\{	(x,y)	\:	|	0	\leqq	x	\leqq	1	,	0	\leqq	y	\leqq	1	\}$の，左端と
+右端の線分の$(1/2,	1/2)$を中心とした対点同士，すなわち，すべての$0	\leqq	y	\leqq	1$
+に対して，$(0,y)$と$(1,1-y)$は同じ点とみなした商空間を，\textbf{M\"{o}biusの帯}
+（M\"{o}bius band）といい，これは裏表のない空間である（図\ref{fig2x1}）．
+
+\begin{figure}[hp]
+	\centering
+	\includegraphics[bb=0 0 800 200,clip,width=96.7mm,height=32.5mm]{fig2x1.bmp}
+	\caption{M\"{o}biusの帯}
+	\label{fig2x1}
+\end{figure}
+\□
+
+\pagebreak
+\例{2.6}
+$n$次元球面$S^n$の対点どうし，$\boldsymbol{x}=(x_1,	x_2,	\cdots	,	x_{n+1})	\in	S^n$と
+$-\boldsymbol{x}=(-x_1,	-x_2,	\cdots	,	-x_{n+1})	\in	S^n$を同じ点とみなした商空間を，
+\textbf{$n$次元実射影空間}（real projective space）とよび，$P^n(\R)$と書く．
+$n=2$のとき，$P^2	(\R)$は\textbf{実射影平面}（real projective plane）と呼ばれる．
+
+$D^2$の境界$\partial D^2	=	S^1$の対点どうしを同じ点とみなした$D^2$の商空間は，
+実射影平面$P^2(\R)$と位相同型である．
+\□
+
+
+

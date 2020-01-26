@@ -1,0 +1,70 @@
+\section{和空間と接着空間}
+
+$X$と$Y$を2つの位相空間とし，共通部分を$A	(	X	\cap Y	=	A)$とする．そのとき，
+\textbf{和空間}（sum）$X	\cup Y$が定まる．$\displaystyle	X	\cup_A	Y$と書くこともある．
+$X	\cap	Y	=	\varnothing$ならば，$X	\cup	Y$は，$X$と$Y$がばらばらな和空間となる
+（図\ref{fig2x2}）．
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[bb=0 0 800 200,clip,width=122.0mm,height=53.8mm]{fig2x2.bmp}
+	\caption{和空間}
+	\label{fig2x2}
+\end{figure}
+今，$X	\cap Y	\ne	\varnothing$であっても，$X	\supset	A,	Y	\supset	B$で位相同型写像
+$h	:	B	\to	A$が存在したら，$h$で$A$と$B$を同じものと考えることにより，
+$X	\cap	Y	=	A	=	B$と見て，上と同様に和空間が考えられる．この空間を$	X	\cup_h	Y$と書く．
+
+
+さらに，$X	\supset	A,	Y	\supset	B$で，$h	:	B	\to	A$が単に連続写像である場合でも，
+$X$と$Y$のばらばらの和空間$	X	\cup	Y$で，すべての$b	\in	B$に対し，$a=	h(b)$となる
+$a$を$b$と同じ点とみなすことにより，\textbf{接着写像}（attaching	map）
+$h:	B	\to	A$による\textbf{接着空間}（attaching	space）$X	\cup_h	Y$が定義される
+（図\ref{fig2x3}）．
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[bb=0 0 800 200,clip,width=111.7mm,height=34.1mm]{fig2x3.bmp}
+	\caption{接着空間}
+	\label{fig2x3}
+\end{figure}
+
+\例{2.7}
+$pt$で1点を表し，
+\[
+	X	=	A	=	pt,	\quad	Y	=	D^2,	\quad	B	=	\partial	D^2	=	S^1
+\]
+とする．このとき$h	:	B	\to	A$は定値写像で，接着空間$	X	\cup_h	Y$は，
+2次元球面$S^2$と位相同型である．
+\□
+
+\例{2.8}
+$X	=	A	=	S^1$，$Y	=	I	\times	S^1$，$B	=	\{0	\}	\times	S^1$とすると，
+$A$も$B$もともに円周と位相同型である．$h	:	B	\to	A$を，$B$をひとまわりするとき
+$A$を2まわりする写像（円周を長さ$1$の複素数として，$z	\to	z^2$の写像）とすると，
+接着空間$X	\cup_h	Y$は，M\"{o}bius の帯と位相同型（証明は円周問題を参照．
+解は巻末）．
+\□
+
+\例{2.9}
+\[
+	X	=	A	=	S^1	,	\quad	Y	=	D^2	,	\quad	B=\partial	D^2	=	S^1
+\]
+これは，上の例と$X,A,B$が等しく，$Y$のみが異なる．
+$h	:	B	\to	A$を，上の例と同じ写像とする．このとき，接着空間$X	\cup_h	Y$は，
+M\"{o}biusの帯の縁に2次元球体を貼り付けたものに位相同型となるが，
+これは，2次元実射影平面$P^2(\R)$と位相同型である．
+\□
+
+\例{2.10}
+トーラス$T^2	=	S^1	\times	S^1$から，埋め込まれた2次元球体$D^2$（の内点）をとりのぞくと，
+境界が$S^1$であるロボットの手袋$T_0^2$ができる．2つの$T_0^2$の境界$S^1$d同士を張り合わせると，
+2人乗り浮き袋$M_2$となる．$M_2$を，\textbf{種数}（genus）2の\textbf{閉曲面}
+（closed sufface，性格に言うと向き付け可能な閉曲面）ということもある．さらに，
+$M_2$から$D^2$（の内点）を取り除き，$T_0^2$を張り合わせるという操作を繰り返し，
+$n$人乗り浮き袋$M_n$を得る（図\ref{fig2x4}）．
+（向き付け可能な）閉曲面はすべて$n$人乗り浮き袋の型をしており，$n$を閉曲面の種数という．
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[bb=0 0 800 200,clip,width=114.2mm,height=31.7mm]{fig2x4.bmp}
+	\caption{閉曲面}
+	\label{fig2x4}
+\end{figure}

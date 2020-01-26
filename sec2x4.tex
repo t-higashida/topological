@@ -1,0 +1,105 @@
+\section{セル複体}
+$i$次元球体$D^i$の内部$D^i	-	\partial	D^i	=	D^i	-	S^{i-1}$と位相同型なものがいくつか
+集まって（$0	\leqq	i	\leqq	n$とする）1つの図形を構成しているときに，その1つ1つを
+\textbf{$i$セル}（cell）と呼ぶのが習慣である．$i$セルを$e^i$と書くとき，$i$次元球体$D^i$と
+位相同型なものを$\overline{e}^i$と書き，\textbf{閉セル}または\textbf{ふちつきセル}（closed cell）
+とよぶ．$\partial e^i$で，$S^{i-1}$と位相同型はふち（境界）を表す．
+したがって$\overline{e}^i	-	\partial	\overline{e}^i	=	e^i$
+となる．$\overline{e}^0	=	e^0$は1点，$\partial	\overline{e}^0	\simeq	S^{-1}$は空集合と考える．
+したがって，ふちつき$0$セルは，ふちのない$0$セルでもある．
+
+\定義{2.11}
+次のレシピにしたがって順次構成された接着空間を\textbf{（有限）セル複体}（cell complex）という．
+
+［材料］
+\begin{list}{}{}
+	\item	$k_0$個のふちつき$0$セル　$\overline{e}_1^0,	\overline{e}_2^0,	\cdots	,	\overline{e}_{k_0}^0$
+	\item	$k_1$個のふちつき$1$セル　$\overline{e}_1^1,	\overline{e}_2^1,	\cdots	,	\overline{e}_{k_1}^1$
+	\item	$\cdots$
+	\item	$k_i$個のふちつき$i$セル　$\overline{e}_1^i,	\overline{e}_2^i,	\cdots	,	\overline{e}_{k_i}^i$
+	\item	$\cdots$
+	\item	$k_n$個のふちつき$n$セル　$\overline{e}_1^n,	\overline{e}_2^n,	\cdots	,	\overline{e}_{k_n}^n$
+\end{list}
+
+［制作］
+まず$X^0	=	\overline{e}_1^1	\cup	\overline{e}_2^1	\cup	\cdots	\cup	e_{k_1}^1$（ばらばらの和）と定め，
+$\partial	X^{(1)}	=	\partial	\overline{e}_1^1	\cup	\partial	\overline{e}_2^1	\cup	\cdots	\cup	\partial	\overline{e}_{k_1}^1$
+とおく．このとき，連続写像
+\[
+	h_1	:	\partial	X^{(1)}	\to	X^0
+\]
+をとってくる（接着写像を１つ指定する）．それにより，
+\[
+	X^1	\equiv	X^0	\cup_{h_1}	X^{(1)}
+\]
+とおき，接着空間として$X^1$を定める．
+
+次に$X^{(2)}	=	\overline{e}_1^2	\cup	\overline{e}_2^2	\cup	\cdots	\cup	\overline{e}_{k_2}^2$
+（ばらばらの和）と定め，$\partial	X{(2)}	=	\partial	\overline{e}_1^2	\cup	\partial	\overline{e}_2^2	\cup	
+\cdots	\cup	\partial	\overline{e}_{k_2}^2$とおき，連続写像
+\[
+	h_2	;	\partial	X^{(2)}	\to	X^1
+\]
+をとってくる（次の接着写像を1つ指定する）．それにより，
+\[
+	X^2	\equiv	X^1	\cup_{h_2}	X^{(2)}
+\]
+とおき，接着空間として$X^2$を定める．
+
+これを繰り返して
+\[
+	X^n	=	X^{n-1}	\cup_{h_n}	X^{(n)}
+\]
+とおくと，$X^n$は，すべての材料を使ってできたもので，$X	=	X^n$が完成品
+である．
+\□
+このようにし作られた作品$X$が，（１つの）$n$次元セル複体，
+あるいは，単にセル複体とよばれ，材料と接着写像$h_1,	h_2,	\cdots,	h_n$によってつくられたものである．
+$	0	\leqq	q	\leqq	n$に対して，$X^q$をセル複体$X$の\textbf{$q$セル切片}
+（$q$-skeleton）という．
+
+
+セル$e_j^q$に対し，自然な包含写像$i	:	\overline{e}_j^q	\to	X^{(q)}$，
+自然な同一視写像$\pi	:	X^{(q)}	\to	X^q	=X^{q-1}	\cup_{h_q}	X^{(q)}$および包含写像
+$\iota	:	X^q	\to	$は結合
+\[
+	\varphi_j^q	=	\iota	\circ	\pi	\circ	i	:	\overline{e}_j^q	\to	X
+\]
+を定める．写像$\varphi_j^q$を，セル$e_j^q$の\textbf{特性写像}（characteristic map）という．
+
+特性写像$\varphi_j^q$の境界$\partial	\overline{e}_j^q$への制限は，接着写像$h_q	:	\partial	X^{(q)}	\to	X^{q-1}$の
+$\partial	\overline{e}_j^q$への制限に等しい．
+
+\textbf{注意}
+途中の次元のセルが1つもなくてもよいが，$X^{(q)} = \overline{e}_1 \cup \overline{e}_2^q \cup \cdots \overline{e}_{k_q}^q$
+（ばらばらの和）の境界$\partial X^{(q)}$が，必ず接着写像
+\[
+	h_q : \partial X^{(q)} \to X^r, \quad r < q
+\]
+で接着されているのが条件である．
+
+定義から，次が成立することがすぐわかる．
+
+\定理{2.12}
+セル複体$X$は，(ふちのない）セルの集まりである．すなわち
+\[
+	X = \bigcup_{p,q} e^{p}_{q}
+\]
+\□
+
+\例{2.13}
+$n$次元球面は，1つの$0$セル$\overline{e}^{0}$と，1つのふちつき$n$セル$\overline{e}^n$，
+および定値接着写像
+\[
+	h_n : \partial X^{(n)} = \partial \overline{e}^n \to \overline{e}^0
+\]
+により定まるセル複体である．すなわち
+\[
+	S^n = \overline{e}^0 \cup_{h_n} \overline{e}^n
+\]
+$n$次元球体$D^n$は，セル複体$S^{n-1} = \overline{e}^0 \cup_{h_{n-1}} \overline{e}^{n-1}$に，
+1つのふちつき$n$セル$\overline{e}^n$が，恒等写像の接着写像
+\[
+	h_n : \partial X^{(n)} = S^{n-1} \to X^{n-1} = S^{n-1}
+\]
+により接着されたセル複体である.すなわち
